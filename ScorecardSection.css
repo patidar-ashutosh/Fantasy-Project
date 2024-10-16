@@ -1,0 +1,82 @@
+.parentContainer {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for team scorecards */
+.scorecard-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+/* Flexbox layout for the scorecards */
+.scorecard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Batting and Bowling sections */
+.batting-scorecard, .bowling-scorecard {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border: 1px solid #dee2e6;
+}
+
+.table thead {
+    background-color: #343a40;
+    color: white;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+}
+
+/* Headings */
+h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+/* VS logo */
+.vs-logo h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .scorecard {
+        flex-direction: column;
+    }
+}

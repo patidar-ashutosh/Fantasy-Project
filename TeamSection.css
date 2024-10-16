@@ -1,0 +1,82 @@
+.selection-box {
+    border: 1px solid #007bff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 200px; /* Set a fixed height for uniformity */
+    display: flex;
+    flex-direction: column; /* Allow space for content */
+    justify-content: flex-start; /* Align content to the top */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.selection-box li {
+    padding: 5px 10px; /* Add padding to list items */
+    margin: 5px 0; /* Add margin for spacing between items */
+    background-color: #e9ecef; /* Default light gray background */
+    border-radius: 0.25rem; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.selection-box li:hover {
+    background-color: #adb5bd; /* Darker gray on hover */
+}
+
+.player-list {
+    border: 1px solid #ffc107;
+    padding: 10px;
+    border-radius: 0.5rem;
+    background-color: #fff3cd;
+}
+
+.player-list li {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    margin-bottom: 5px;
+}
+
+.player-list li:hover {
+    background-color: #ffd65b;
+}
+
+.needPlayerMsg {
+    color: red; /* Text color red */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.2rem; /* Increase the font size */
+    padding: 10px; /* Add some padding for spacing */
+    margin-top: 10px; /* Add some space on top */
+}
+
+.PlayerSectionDoneMsg {
+    color: green; /* Text color green for success message */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.2rem; /* Slightly larger font size */
+    padding: 10px; /* Add padding for spacing inside */
+    margin-top: 10px; /* Space at the top */
+}
+
+/* Redirect effect Section */
+.hidden {
+    display: none; /* This class hides the popup */
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+}
